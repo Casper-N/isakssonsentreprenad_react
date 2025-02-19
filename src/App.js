@@ -3,13 +3,13 @@ import { Contact } from "./components/main/Contact";
 import { MachineFleet } from "./components/main/MachineFleet";
 import { Services } from "./components/main/Services";
 import { TextImage } from "./components/main/TextImage";
-import { Navbar } from "./components/navbar/Navbar";
+import { NavBar } from "./components/navbar/Navbar";
 
 function App() {
   return (
     <div className="bg-light">
       <header>
-        <Navbar />
+        <NavBar />
       </header>
 
       <main>

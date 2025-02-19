@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { Navlink } from "./Navlink";
+import { Container, Navbar, Nav } from "react-bootstrap";
 
-export const Navbar = () => {
+export const NavBar = () => {
   const [activeLink, setActiveLink] = useState(0);
   const sections = ["home", "about", "services", "machinefleet", "contact"];
 
@@ -25,58 +25,36 @@ export const Navbar = () => {
   });
 
   return (
-    <nav className="navbar fixed-top navbar-expand-xl navbar-light bg-light">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+    <Navbar expand="lg" bg="light" variant="light" fixed="top">
+      <Container fluid>
+        <Navbar.Brand href="#home">
           <img src="images/logo_navbar.png" alt="" width="100" height="50" />
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
+        </Navbar.Brand>
+        <Navbar.Toggle
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <Navlink
-              text="Hem"
-              href="home"
-              active={activeLink === 0}
-              onClick={() => setActiveLink(0)}
-            />
-            <Navlink
-              text="Om mig"
-              href="about"
-              active={activeLink === 1}
-              onClick={() => setActiveLink(1)}
-            />
-            <Navlink
-              text="Tjänster"
-              href="services"
-              active={activeLink === 2}
-              onClick={() => setActiveLink(2)}
-            />
-            <Navlink
-              text="Maskinpark"
-              href="machinefleet"
-              active={activeLink === 3}
-              onClick={() => setActiveLink(3)}
-            />
-            <Navlink
-              text="Kontakt"
-              href="contact"
-              active={activeLink === 4}
-              onClick={() => setActiveLink(4)}
-            />
-          </ul>
-        </div>
-      </div>
-    </nav>
+        />
+        <Navbar.Collapse id="navbarSupportedContent">
+          <Nav className="me-auto mb-2 mb-lg-0 fs-4">
+            <Nav.Link href="#home" active={activeLink === 0}>
+              Hem
+            </Nav.Link>
+            <Nav.Link href="#about" active={activeLink === 1}>
+              Om mig
+            </Nav.Link>
+            <Nav.Link href="#services" active={activeLink === 2}>
+              Tjänster
+            </Nav.Link>
+            <Nav.Link href="#machinefleet" active={activeLink === 3}>
+              Maskinpark
+            </Nav.Link>
+            <Nav.Link href="#contact" active={activeLink === 4}>
+              Kontakt
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };

@@ -6,16 +6,16 @@ export const Contact = () => {
   return (
     <div>
       <div id="contact" className="target-anchor"></div>
-      <div className="row pb-5" style={{ marginBottom: "212px" }}>
+      <div className="row pb-5">
         <Title text={"Kontakt"} />
 
         <div className="col">
           <div className="row me-5 ms-5 border rounded">
-            <div className="col ms-5 p-5 d-flex justify-content-center">
+            <div className="col-12 col-md-6 p-md-5">
               <ContactForm />
             </div>
 
-            <div className="col me-5 p-5 d-flex justify-content-center">
+            <div className="col-12 col-md-6 p-5">
               <ContactInfo />
             </div>
           </div>

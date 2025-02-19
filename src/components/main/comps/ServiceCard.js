@@ -1,6 +1,6 @@
 export const ServiceCard = ({ img, title, description }) => {
   return (
-    <div className="col-md-3 col-6 mb-3">
+    <div className="col-12 col-sm-6 col-md-3 mb-3">
       <div className="card">
         <img
           src={`images/services/${img}`}

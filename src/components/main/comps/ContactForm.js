@@ -44,7 +44,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <form className="ms-5" onSubmit={handleSubmit}>
+    <form className="ms-md-5 p-3 p-md-0" onSubmit={handleSubmit}>
       <div className="row">
         <div className="col-12 mb-3">
           <label htmlFor="contactForm_name" className="form-label form-req">
@@ -61,7 +61,7 @@ export const ContactForm = () => {
           ></input>
         </div>
 
-        <div className="col-6 mb-3">
+        <div className="col-12 col-md-6 mb-3">
           <label htmlFor="contactForm_email" className="form-label form-req">
             Email
             <span>*</span>
@@ -75,7 +75,7 @@ export const ContactForm = () => {
             value={email}
           />
         </div>
-        <div className="col-6 mb-3">
+        <div className="col-12 col-md-6 mb-3">
           <label htmlFor="contactForm_phone" className="form-label">
             Telefonnummer
           </label>

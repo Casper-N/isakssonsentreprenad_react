@@ -1,17 +1,16 @@
 export const ContactInfo = () => {
   return (
-    <div className="me-5">
+    <div className="me-md-5">
       <div className="row">
-        <div className="col-4 mb-3">
+        <div className="col-6 mb-3">
           <img
             src="images/logo.jpg"
             alt="Kevin Isaksson"
-            className="border rounded-circle"
-            width="150px"
-            height="auto"
+            className="img-fluid rounded-circle"
+            style={{ minWidth: "100px" }}
           />
         </div>
-        <div className="col-6 mb-3 align-self-center">
+        <div className="col-12 col-md-6 mb-5 mb-md-3 align-self-center">
           <div className="fs-3">Kevin Isaksson</div>
           <div className="fs-5 text-muted mb-2">VD</div>
           <div className="d-flex flex-row gap-3">
@@ -30,14 +29,14 @@ export const ContactInfo = () => {
             </a>
           </div>
         </div>
-        <div className="col-6 mb-5">
+        <div className="col-12 col-md-6 mb-3 mb-md-5">
           <Badge
             icon="phone"
             title="Telefon"
             text={<div className="text-muted">045 1234567</div>}
           />
         </div>
-        <div className="col-6 mb-5">
+        <div className="col-12 col-md-6 mb-5">
           <Badge
             icon="envelope"
             title="Email"
