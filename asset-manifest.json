@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/isakssonsentreprenad_react/static/css/main.69ee3294.css",
+    "main.js": "/isakssonsentreprenad_react/static/js/main.33b66bb2.js",
+    "static/js/453.889430c3.chunk.js": "/isakssonsentreprenad_react/static/js/453.889430c3.chunk.js",
+    "index.html": "/isakssonsentreprenad_react/index.html",
+    "main.69ee3294.css.map": "/isakssonsentreprenad_react/static/css/main.69ee3294.css.map",
+    "main.33b66bb2.js.map": "/isakssonsentreprenad_react/static/js/main.33b66bb2.js.map",
+    "453.889430c3.chunk.js.map": "/isakssonsentreprenad_react/static/js/453.889430c3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69ee3294.css",
+    "static/js/main.33b66bb2.js"
+  ]
+}
