@@ -1,28 +1,29 @@
+import { media } from "../../../utils.js";
+
 export const ContactInfo = () => {
   return (
     <div className="me-md-5">
       <div className="row">
         <div className="col-6 mb-3">
           <img
-            src="images/logo.jpg"
+            src={media("/profile.jpeg")}
             alt="Kevin Isaksson"
             className="img-fluid rounded-circle"
-            style={{ minWidth: "100px" }}
           />
         </div>
         <div className="col-12 col-md-6 mb-5 mb-md-3 align-self-center">
           <div className="fs-3">Kevin Isaksson</div>
-          <div className="fs-5 text-muted mb-2">VD</div>
+          <div className="fs-5 text-muted mb-5">VD (Firmans man)</div>
           <div className="d-flex flex-row gap-3">
             <a
-              className="fs-4"
+              className="fs-2"
               href="https://www.facebook.com/IsakssonsEntreprenad"
             >
               <span className="fa fa-facebook"></span>
             </a>
 
             <a
-              className="fs-4"
+              className="fs-2"
               href="https://www.instagram.com/IsakssonsEntreprenad"
             >
               <span className="fa fa-instagram"></span>
@@ -33,14 +34,14 @@ export const ContactInfo = () => {
           <Badge
             icon="phone"
             title="Telefon"
-            text={<div className="text-muted">045 1234567</div>}
+            text={<a className="text-dark" href="tel:+358404151950">+358 40 4151950</a>}
           />
         </div>
         <div className="col-12 col-md-6 mb-5">
           <Badge
             icon="envelope"
             title="Email"
-            text={<div className="text-muted">kervin@gmail.com</div>}
+            text={<a className="text-dark" href="mailto:isakssons.entreprenad@outlook.com">isakssons.entreprenad@outlook.com</a>}
           />
         </div>
       </div>

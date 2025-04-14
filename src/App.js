@@ -1,8 +1,8 @@
-import { About } from "./components/main/About";
 import { Contact } from "./components/main/Contact";
-import { MachineFleet } from "./components/main/MachineFleet";
+import { Projects } from "./components/main/Projects";
 import { Services } from "./components/main/Services";
 import { TextImage } from "./components/main/TextImage";
+import Video from "./components/main/Video";
 import { NavBar } from "./components/navbar/Navbar";
 
 function App() {
@@ -13,15 +13,11 @@ function App() {
       </header>
 
       <main>
-        <TextImage
-          text={
-            "En textsnutt hit som kan innehålla vad du vill, bakgrundsbilden kan också ändras"
-          }
-        />
         <div className="container-fluid">
-          <About />
+          <Video />
           <Services />
-          <MachineFleet />
+          <Projects />
+          <TextImage text={"Inget jobb är för stort eller litet för oss!"} />
           <Contact />
         </div>
       </main>

@@ -1,3 +1,4 @@
+import { media } from "../../utils";
 import { ServiceCard } from "./comps/ServiceCard";
 import { Title } from "./comps/Title";
 
@@ -8,23 +9,23 @@ export const Services = () => {
       <div className="row mb-5">
         <Title text={"Tjänster"} />
         <ServiceCard
-          img={"woodsplitting.jpg"}
-          title={"Vädklyvning"}
+          img={media("/services/wood_splitting.jpeg")}
+          title={"Vedklyvning"}
           description={"Kort beskrivning om tjänsten"}
         />
         <ServiceCard
-          img={"forestry.png"}
-          title={"Risröjning"}
+          img={media("/services/energy_cutting.jpeg")}
+          title={"Energiklippning"}
           description={"Kort beskrivning om tjänsten"}
         />
         <ServiceCard
-          img={"tree_felling.jpg"}
+          img={media("/services/woodcutting.jpeg")}
           title={"Trädfällning"}
           description={"Kort beskrivning om tjänsten"}
         />
         <ServiceCard
-          img={"ditch_cleaning.jpg"}
-          title={"Dikesröjning"}
+          img={media("/services/transports.jpeg")}
+          title={"Virkestransporter"}
           description={"Kort beskrivning om tjänsten"}
         />
       </div>

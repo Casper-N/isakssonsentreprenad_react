@@ -9,14 +9,13 @@ export const Contact = () => {
       <div className="row pb-5">
         <Title text={"Kontakt"} />
 
-        <div className="col">
-          <div className="row me-5 ms-5 border rounded">
-            <div className="col-12 col-md-6 p-md-5">
-              <ContactForm />
-            </div>
-
-            <div className="col-12 col-md-6 p-5">
+        <div className="container-fluid pe-5 ps-5">
+          <div className="row p-3 border rounded">
+            <div className="col-12 col-md-6">
               <ContactInfo />
+            </div>
+            <div className="col-12 col-md-6 align-self-end text-center">
+              <ContactForm />
             </div>
           </div>
         </div>

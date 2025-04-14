@@ -26,7 +26,8 @@ body {
 
 .img-container .img-text {
   position: absolute;
-  top: 50%;
+  top: 10%;
+  text-wrap: nowrap;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -37,6 +38,11 @@ body {
 
 @media (max-width: 1000px) {
   .img-text {
+    font-size: 18px;
+  }
+
+  .carousel-item h2,
+  .carousel-item h4 {
     font-size: 18px;
   }
 }
@@ -52,4 +58,9 @@ body {
   left: 2px;
   color: red;
   font-weight: bolder;
+}
+
+.carousel-item img {
+  filter: brightness(70%);
+  max-height: 700px;
 }
