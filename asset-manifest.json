@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/isakssonsentreprenad_react/static/css/main.69ee3294.css",
-    "main.js": "/isakssonsentreprenad_react/static/js/main.0413ca2f.js",
+    "main.css": "/isakssonsentreprenad_react/static/css/main.4887f46a.css",
+    "main.js": "/isakssonsentreprenad_react/static/js/main.75dc798e.js",
     "static/js/453.889430c3.chunk.js": "/isakssonsentreprenad_react/static/js/453.889430c3.chunk.js",
     "index.html": "/isakssonsentreprenad_react/index.html",
-    "main.69ee3294.css.map": "/isakssonsentreprenad_react/static/css/main.69ee3294.css.map",
-    "main.0413ca2f.js.map": "/isakssonsentreprenad_react/static/js/main.0413ca2f.js.map",
+    "main.4887f46a.css.map": "/isakssonsentreprenad_react/static/css/main.4887f46a.css.map",
+    "main.75dc798e.js.map": "/isakssonsentreprenad_react/static/js/main.75dc798e.js.map",
     "453.889430c3.chunk.js.map": "/isakssonsentreprenad_react/static/js/453.889430c3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.69ee3294.css",
-    "static/js/main.0413ca2f.js"
+    "static/css/main.4887f46a.css",
+    "static/js/main.75dc798e.js"
   ]
 }
